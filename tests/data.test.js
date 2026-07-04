@@ -39,7 +39,7 @@ describe("vacation itinerary data", () => {
     const costs = Object.fromEntries(getStays().map((stay) => [stay.place, stay.cost.label]));
 
     assert.deepEqual(costs, {
-      "Camping Granada": "No encontrado en correos",
+      "Camping Granada": "44,00 €",
       "La Marina Resort": "692,36 €",
       "Bravoplaya Resort": "196,00 €",
       "Camping Riberamar": "90,00 €",

@@ -5,8 +5,8 @@ export const tripDays = [
     place: "Camping Granada",
     detail: "Dormir en Granada",
     cost: {
-      label: "No encontrado en correos",
-      note: "No aparece importe en el export local",
+      label: "44,00 €",
+      note: "Coste indicado manualmente",
     },
     status: "confirmed",
     theme: "granada",
