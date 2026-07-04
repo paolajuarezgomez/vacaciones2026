@@ -223,8 +223,8 @@ export const tripDays = [
     place: "Camping Osuna, Madrid",
     detail: "Entrada: 12:00-23:30",
     cost: {
-      label: "No encontrado en correos",
-      note: "El correo no incluye importe",
+      label: "52,00 €",
+      note: "Coste indicado manualmente",
     },
     transfer: {
       from: "Zaragoza Camping",

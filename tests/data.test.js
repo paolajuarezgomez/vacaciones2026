@@ -45,7 +45,7 @@ describe("vacation itinerary data", () => {
       "Camping Riberamar": "90,00 €",
       "La Siesta Salou": "739,90 €",
       "Zaragoza Camping": "84,50 €",
-      "Camping Osuna, Madrid": "No encontrado en correos",
+      "Camping Osuna, Madrid": "52,00 €",
       "Camping de Caceres": "No encontrado en correos",
     });
   });
