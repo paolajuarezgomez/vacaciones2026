@@ -62,8 +62,11 @@ export function renderStays(stays) {
 }
 
 function renderDayCard(day) {
-  const checkIn = day.checkIn
+  const standaloneCheckIn = day.checkIn && !day.transfer
     ? `<p class="meta"><span>Entrada</span>${escapeHtml(day.checkIn)}</p>`
+    : "";
+  const transferCheckIn = day.checkIn
+    ? `<p class="transfer-meta"><span>Entrada</span>${escapeHtml(day.checkIn)}</p>`
     : "";
   const transfer = day.transfer
     ? `
@@ -71,6 +74,7 @@ function renderDayCard(day) {
         <span>Traslado</span>
         <strong>${escapeHtml(day.transfer.from)} -> ${escapeHtml(day.transfer.to)}</strong>
         <p>${escapeHtml(day.transfer.duration)} aprox.</p>
+        ${transferCheckIn}
         ${day.transfer.note ? `<small>${escapeHtml(day.transfer.note)}</small>` : ""}
       </div>
     `
@@ -97,7 +101,7 @@ function renderDayCard(day) {
       <div class="day-card-body">
         <h2>${escapeHtml(day.place)}</h2>
         <p>${escapeHtml(day.detail)}</p>
-        ${checkIn}
+        ${standaloneCheckIn}
         ${transfer}
         ${activity}
       </div>

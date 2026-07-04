@@ -248,11 +248,17 @@ button {
 }
 
 .activity p,
-.transfer p {
+.transfer p,
+.transfer-meta {
   margin: 5px 0 0;
   color: var(--muted);
   font-size: 13px;
   line-height: 1.35;
+}
+
+.transfer-meta {
+  display: flex;
+  gap: 8px;
 }
 
 .transfer small {

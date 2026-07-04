@@ -30,6 +30,17 @@ describe("itinerary rendering", () => {
     assert.match(html, /Zaragoza Camping -> Camping Osuna, Madrid/);
   });
 
+  it("renders check-in details inside transfer boxes when a transfer exists", () => {
+    const marinaDay = tripDays.find((day) => day.date === "2026-07-11");
+    const html = renderItinerary([marinaDay]);
+
+    assert.match(
+      html,
+      /<div class="transfer">[\s\S]*<span>Entrada<\/span>[\s\S]*desde 12:00[\s\S]*<\/div>/,
+    );
+    assert.doesNotMatch(html, /<p class="meta"><span>Entrada<\/span>desde 12:00<\/p>/);
+  });
+
   it("renders all days that need review", () => {
     const html = renderPending(getPendingDays());
 
