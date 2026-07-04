@@ -54,6 +54,11 @@ export function renderStays(stays) {
           <p class="eyebrow">${formatDateRange(stay.startDate, stay.endDate)}</p>
           <h3>${escapeHtml(stay.place)}</h3>
           <p>${escapeHtml(stay.detail)}</p>
+          <div class="stay-cost">
+            <span>Coste</span>
+            <strong>${escapeHtml(stay.cost.label)}</strong>
+            ${stay.cost.note ? `<small>${escapeHtml(stay.cost.note)}</small>` : ""}
+          </div>
           <strong>${stay.nights} ${stay.nights === 1 ? "noche" : "noches"}</strong>
         </article>
       `,

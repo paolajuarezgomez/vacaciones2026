@@ -28,6 +28,25 @@ describe("vacation itinerary data", () => {
       nights: 7,
       status: "confirmed",
       theme: "marina",
+      cost: {
+        label: "692,36 €",
+        note: "Importe de la reserva",
+      },
+    });
+  });
+
+  it("keeps accommodation costs extracted from email confirmations", () => {
+    const costs = Object.fromEntries(getStays().map((stay) => [stay.place, stay.cost.label]));
+
+    assert.deepEqual(costs, {
+      "Camping Granada": "No encontrado en correos",
+      "La Marina Resort": "692,36 €",
+      "Bravoplaya Resort": "196,00 €",
+      "Camping Riberamar": "90,00 €",
+      "La Siesta Salou": "739,90 €",
+      "Zaragoza Camping": "84,50 €",
+      "Camping Osuna, Madrid": "No encontrado en correos",
+      "Camping de Caceres": "No encontrado en correos",
     });
   });
 

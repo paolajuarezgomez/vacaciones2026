@@ -55,6 +55,9 @@ describe("itinerary rendering", () => {
     assert.match(html, /La Marina Resort/);
     assert.match(html, /11 jul - 17 jul/);
     assert.match(html, /7 noches/);
+    assert.match(html, /692,36 €/);
+    assert.match(html, /Importe de la reserva/);
+    assert.match(html, /No encontrado en correos/);
   });
 
   it("formats single-day and range dates", () => {

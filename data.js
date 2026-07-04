@@ -4,6 +4,10 @@ export const tripDays = [
     weekday: "Vie",
     place: "Camping Granada",
     detail: "Dormir en Granada",
+    cost: {
+      label: "No encontrado en correos",
+      note: "No aparece importe en el export local",
+    },
     status: "confirmed",
     theme: "granada",
   },
@@ -13,6 +17,10 @@ export const tripDays = [
     place: "La Marina Resort",
     detail: "Parcela 379",
     checkIn: "desde 12:00",
+    cost: {
+      label: "692,36 €",
+      note: "Importe de la reserva",
+    },
     transfer: {
       from: "Camping Granada",
       to: "La Marina Resort",
@@ -76,6 +84,10 @@ export const tripDays = [
     place: "Bravoplaya Resort",
     detail: "Parcela PLATA 072",
     checkIn: "13:00-22:00",
+    cost: {
+      label: "196,00 €",
+      note: "Importe total de la estancia",
+    },
     transfer: {
       from: "La Marina Resort",
       to: "Bravoplaya Resort",
@@ -99,6 +111,10 @@ export const tripDays = [
     place: "Camping Riberamar",
     detail: "Parcela Estandar + Fregadero Sur",
     checkIn: "desde 12:00",
+    cost: {
+      label: "90,00 €",
+      note: "22,50 € pagado + 67,50 € restante",
+    },
     transfer: {
       from: "Bravoplaya Resort",
       to: "Camping Riberamar",
@@ -122,6 +138,10 @@ export const tripDays = [
     place: "La Siesta Salou",
     detail: "Premium Plus",
     checkIn: "desde 12:00",
+    cost: {
+      label: "739,90 €",
+      note: "Total reserva con city tax",
+    },
     transfer: {
       from: "Camping Riberamar",
       to: "La Siesta Salou",
@@ -176,6 +196,10 @@ export const tripDays = [
     place: "Zaragoza Camping",
     detail: "Parcela",
     checkIn: "desde 12:00",
+    cost: {
+      label: "84,50 €",
+      note: "Estancia total",
+    },
     transfer: {
       from: "La Siesta Salou",
       to: "Zaragoza Camping",
@@ -198,6 +222,10 @@ export const tripDays = [
     weekday: "Mie",
     place: "Camping Osuna, Madrid",
     detail: "Entrada: 12:00-23:30",
+    cost: {
+      label: "No encontrado en correos",
+      note: "El correo no incluye importe",
+    },
     transfer: {
       from: "Zaragoza Camping",
       to: "Camping Osuna, Madrid",
@@ -216,6 +244,10 @@ export const tripDays = [
     weekday: "Jue",
     place: "Camping de Caceres",
     detail: "Pendiente de detalle",
+    cost: {
+      label: "No encontrado en correos",
+      note: "No aparece reserva con importe en el export local",
+    },
     transfer: {
       from: "Camping Osuna, Madrid",
       to: "Camping de Caceres",
@@ -275,6 +307,10 @@ export function getStays(days = tripDays) {
         nights: 1,
         status: day.status,
         theme: day.theme,
+        cost: day.cost ?? {
+          label: "No encontrado en correos",
+          note: "Sin importe localizado",
+        },
       });
 
       return stays;
