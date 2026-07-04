@@ -173,6 +173,10 @@ export const tripDays = [
     weekday: "Mar",
     place: "Camping Riberamar",
     detail: "Parcela Estandar + Fregadero Sur",
+    photo: {
+      src: "./assets/day-photos/riberamar-21-julio.png",
+      alt: "Atraccion acuatica con dragon en el parque Sports",
+    },
     activity: {
       title: "DAY PASS HOTEL CON PARQUE ACUATICO SPORTS",
       note: "11:00-18:00",
@@ -305,6 +309,10 @@ export const tripDays = [
     weekday: "Mar",
     place: "Zaragoza Camping",
     detail: "Parcela",
+    photo: {
+      src: "./assets/day-photos/zaragoza-28-aljaferia.png",
+      alt: "Palacio de la Aljaferia en Zaragoza",
+    },
     activity: {
       title: "Ideas para visitar Zaragoza",
       items: [
@@ -341,8 +349,8 @@ export const tripDays = [
       note: "Coste indicado manualmente",
     },
     photo: {
-      src: "./assets/day-photos/madrid-experiencia-amarilla.png",
-      alt: "Experiencia Amarilla en Madrid",
+      src: "./assets/day-photos/madrid-willy-29-julio.png",
+      alt: "Willy el Tuerto escape room en Madrid",
     },
     transfer: {
       from: "Zaragoza Camping",

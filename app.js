@@ -1,4 +1,4 @@
-import { getPendingDays, getStays, tripDays } from "./data.js?v=15";
+import { getPendingDays, getStays, tripDays } from "./data.js?v=16";
 
 const monthNames = new Intl.DateTimeFormat("es-ES", { month: "short" });
 const dayMonth = new Intl.DateTimeFormat("es-ES", {
