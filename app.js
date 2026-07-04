@@ -65,6 +65,16 @@ function renderDayCard(day) {
   const checkIn = day.checkIn
     ? `<p class="meta"><span>Entrada</span>${escapeHtml(day.checkIn)}</p>`
     : "";
+  const transfer = day.transfer
+    ? `
+      <div class="transfer">
+        <span>Traslado</span>
+        <strong>${escapeHtml(day.transfer.from)} -> ${escapeHtml(day.transfer.to)}</strong>
+        <p>${escapeHtml(day.transfer.duration)} aprox.</p>
+        ${day.transfer.note ? `<small>${escapeHtml(day.transfer.note)}</small>` : ""}
+      </div>
+    `
+    : "";
   const activity = day.activity
     ? `
       <div class="activity">
@@ -88,6 +98,7 @@ function renderDayCard(day) {
         <h2>${escapeHtml(day.place)}</h2>
         <p>${escapeHtml(day.detail)}</p>
         ${checkIn}
+        ${transfer}
         ${activity}
       </div>
     </article>

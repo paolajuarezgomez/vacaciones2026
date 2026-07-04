@@ -30,4 +30,20 @@ describe("vacation itinerary data", () => {
       theme: "marina",
     });
   });
+
+  it("adds transfer estimates on accommodation change days", () => {
+    const transferDays = tripDays.filter((day) => day.transfer);
+
+    assert.deepEqual(
+      transferDays.map((day) => [day.date, day.transfer.from, day.transfer.duration]),
+      [
+        ["2026-07-18", "La Marina Resort", "3 h 20 min"],
+        ["2026-07-20", "Bravoplaya Resort", "20 min"],
+        ["2026-07-22", "Camping Riberamar", "1 h 45 min"],
+        ["2026-07-27", "La Siesta Salou", "2 h 50 min"],
+        ["2026-07-29", "Zaragoza Camping", "3 h 15 min"],
+        ["2026-07-30", "Camping Osuna, Madrid", "3 h 35 min"],
+      ],
+    );
+  });
 });

@@ -19,6 +19,15 @@ describe("itinerary rendering", () => {
     assert.match(html, /Escape room Experiencia Amarilla/);
   });
 
+  it("renders transfer estimates on transfer days", () => {
+    const html = renderItinerary(tripDays);
+
+    assert.match(html, /Traslado/);
+    assert.match(html, /La Marina Resort -> Bravoplaya Resort/);
+    assert.match(html, /3 h 20 min/);
+    assert.match(html, /Zaragoza Camping -> Camping Osuna, Madrid/);
+  });
+
   it("renders all days that need review", () => {
     const html = renderPending(getPendingDays());
 
