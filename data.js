@@ -2,10 +2,10 @@ export const tripDays = [
   {
     date: "2026-07-10",
     weekday: "Vie",
-    place: "Sin reserva encontrada",
-    detail: "Revisar",
-    status: "review",
-    theme: "review",
+    place: "Camping Granada",
+    detail: "Dormir en Granada",
+    status: "confirmed",
+    theme: "granada",
   },
   {
     date: "2026-07-11",
@@ -13,6 +13,12 @@ export const tripDays = [
     place: "La Marina Resort",
     detail: "Parcela 379",
     checkIn: "desde 12:00",
+    transfer: {
+      from: "Camping Granada",
+      to: "La Marina Resort",
+      duration: "4 h",
+      note: "Estimacion por carretera sin trafico en vivo.",
+    },
     status: "confirmed",
     theme: "marina",
   },

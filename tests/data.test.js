@@ -10,10 +10,10 @@ describe("vacation itinerary data", () => {
     assert.equal(tripDays.at(-1).date, "2026-08-02");
   });
 
-  it("marks the three days that need review", () => {
+  it("marks the two days that need review", () => {
     assert.deepEqual(
       getPendingDays().map((day) => day.date),
-      ["2026-07-10", "2026-07-31", "2026-08-01"],
+      ["2026-07-31", "2026-08-01"],
     );
   });
 
@@ -37,6 +37,7 @@ describe("vacation itinerary data", () => {
     assert.deepEqual(
       transferDays.map((day) => [day.date, day.transfer.from, day.transfer.duration]),
       [
+        ["2026-07-11", "Camping Granada", "4 h"],
         ["2026-07-18", "La Marina Resort", "3 h 20 min"],
         ["2026-07-20", "Bravoplaya Resort", "20 min"],
         ["2026-07-22", "Camping Riberamar", "1 h 45 min"],

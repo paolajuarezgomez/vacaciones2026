@@ -23,6 +23,8 @@ describe("itinerary rendering", () => {
     const html = renderItinerary(tripDays);
 
     assert.match(html, /Traslado/);
+    assert.match(html, /Camping Granada -> La Marina Resort/);
+    assert.match(html, /4 h/);
     assert.match(html, /La Marina Resort -> Bravoplaya Resort/);
     assert.match(html, /3 h 20 min/);
     assert.match(html, /Zaragoza Camping -> Camping Osuna, Madrid/);
@@ -31,7 +33,6 @@ describe("itinerary rendering", () => {
   it("renders all days that need review", () => {
     const html = renderPending(getPendingDays());
 
-    assert.match(html, /10 jul/);
     assert.match(html, /31 jul/);
     assert.match(html, /1 ago/);
     assert.match(html, /Sin reserva encontrada/);
