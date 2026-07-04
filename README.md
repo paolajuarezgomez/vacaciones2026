@@ -2,6 +2,12 @@
 
 PWA estatica para consultar offline el itinerario familiar de vacaciones 2026.
 
+## URL publica
+
+Cuando GitHub Pages termine el despliegue:
+
+`https://paolajuarezgomez.github.io/vacaciones2026/`
+
 ## Uso local
 
 ```bash
