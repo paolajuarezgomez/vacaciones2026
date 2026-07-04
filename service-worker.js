@@ -1,4 +1,4 @@
-const CACHE_NAME = "vacaciones-2026-v10";
+const CACHE_NAME = "vacaciones-2026-v13";
 const ASSETS = [
   "./",
   "./index.html",
@@ -7,8 +7,20 @@ const ASSETS = [
   "./app.js",
   "./manifest.webmanifest",
   "./assets/trip-hero.png",
+  "./assets/day-photos/camping-granada.png",
   "./assets/day-photos/la-marina-dia-1.png",
   "./assets/day-photos/la-marina-dia-2.png",
+  "./assets/day-photos/la-marina-13-julio.png",
+  "./assets/day-photos/la-marina-14-julio.png",
+  "./assets/day-photos/la-marina-15-julio.png",
+  "./assets/day-photos/la-marina-16-julio.png",
+  "./assets/day-photos/la-marina-17-julio.png",
+  "./assets/day-photos/bravoplaya-18-julio.png",
+  "./assets/day-photos/bravoplaya-19-julio.png",
+  "./assets/day-photos/riberamar-20-julio.png",
+  "./assets/day-photos/portaventura-23-julio.png",
+  "./assets/day-photos/ferrari-land-24-julio.png",
+  "./assets/day-photos/zaragoza-27-julio.png",
   "./assets/icon-192.png",
   "./assets/icon-512.png",
 ];

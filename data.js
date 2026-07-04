@@ -8,6 +8,10 @@ export const tripDays = [
       label: "44,00 €",
       note: "Coste indicado manualmente",
     },
+    photo: {
+      src: "./assets/day-photos/camping-granada.png",
+      alt: "Piscina del Camping Granada",
+    },
     status: "confirmed",
     theme: "granada",
   },
@@ -51,6 +55,10 @@ export const tripDays = [
     weekday: "Lun",
     place: "La Marina Resort",
     detail: "Parcela 379",
+    photo: {
+      src: "./assets/day-photos/la-marina-13-julio.png",
+      alt: "Toboganes de La Marina Resort",
+    },
     status: "confirmed",
     theme: "marina",
   },
@@ -59,6 +67,10 @@ export const tripDays = [
     weekday: "Mar",
     place: "La Marina Resort",
     detail: "Parcela 379",
+    photo: {
+      src: "./assets/day-photos/la-marina-14-julio.png",
+      alt: "Piscina y pasarelas de La Marina Resort",
+    },
     status: "confirmed",
     theme: "marina",
   },
@@ -67,6 +79,10 @@ export const tripDays = [
     weekday: "Mie",
     place: "La Marina Resort",
     detail: "Parcela 379",
+    photo: {
+      src: "./assets/day-photos/la-marina-15-julio.png",
+      alt: "Piscinas de La Marina Resort vistas desde arriba",
+    },
     status: "confirmed",
     theme: "marina",
   },
@@ -75,6 +91,10 @@ export const tripDays = [
     weekday: "Jue",
     place: "La Marina Resort",
     detail: "Parcela 379",
+    photo: {
+      src: "./assets/day-photos/la-marina-16-julio.png",
+      alt: "Toboganes grandes de La Marina Resort",
+    },
     status: "confirmed",
     theme: "marina",
   },
@@ -83,6 +103,10 @@ export const tripDays = [
     weekday: "Vie",
     place: "La Marina Resort",
     detail: "Parcela 379",
+    photo: {
+      src: "./assets/day-photos/la-marina-17-julio.png",
+      alt: "Playa cercana a La Marina Resort",
+    },
     status: "confirmed",
     theme: "marina",
   },
@@ -95,6 +119,10 @@ export const tripDays = [
     cost: {
       label: "196,00 €",
       note: "Importe total de la estancia",
+    },
+    photo: {
+      src: "./assets/day-photos/bravoplaya-18-julio.png",
+      alt: "Piscina infantil de Bravoplaya Resort",
     },
     transfer: {
       from: "La Marina Resort",
@@ -110,6 +138,10 @@ export const tripDays = [
     weekday: "Dom",
     place: "Bravoplaya Resort",
     detail: "Parcela PLATA 072",
+    photo: {
+      src: "./assets/day-photos/bravoplaya-19-julio.png",
+      alt: "Playa junto a Bravoplaya Resort",
+    },
     status: "confirmed",
     theme: "bravo",
   },
@@ -122,6 +154,10 @@ export const tripDays = [
     cost: {
       label: "90,00 €",
       note: "22,50 € pagado + 67,50 € restante",
+    },
+    photo: {
+      src: "./assets/day-photos/riberamar-20-julio.png",
+      alt: "Piscina cubierta de Camping Riberamar",
     },
     transfer: {
       from: "Bravoplaya Resort",
@@ -137,6 +173,10 @@ export const tripDays = [
     weekday: "Mar",
     place: "Camping Riberamar",
     detail: "Parcela Estandar + Fregadero Sur",
+    activity: {
+      title: "DAY PASS HOTEL CON PARQUE ACUATICO SPORTS",
+      note: "11:00-18:00",
+    },
     status: "confirmed",
     theme: "ribera",
   },
@@ -164,6 +204,10 @@ export const tripDays = [
     weekday: "Jue",
     place: "La Siesta Salou",
     detail: "Premium Plus",
+    photo: {
+      src: "./assets/day-photos/portaventura-23-julio.png",
+      alt: "Mapa de PortAventura World",
+    },
     activity: {
       title: "PortAventura",
       note: "Fun Pass: Street Mission + Tutuki Splash + Silver River Flume + Grand Canyon Rapids + Stampida",
@@ -176,6 +220,10 @@ export const tripDays = [
     weekday: "Vie",
     place: "La Siesta Salou",
     detail: "Premium Plus",
+    photo: {
+      src: "./assets/day-photos/ferrari-land-24-julio.png",
+      alt: "Atraccion de Ferrari Land",
+    },
     activity: {
       title: "Ferrari Land",
     },
@@ -207,6 +255,10 @@ export const tripDays = [
     cost: {
       label: "84,50 €",
       note: "Estancia total",
+    },
+    photo: {
+      src: "./assets/day-photos/zaragoza-27-julio.png",
+      alt: "Piscina de Zaragoza Camping",
     },
     transfer: {
       from: "La Siesta Salou",
