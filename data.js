@@ -190,6 +190,10 @@ export const tripDays = [
       label: "739,90 €",
       note: "Total reserva con city tax",
     },
+    photo: {
+      src: "./assets/day-photos/la-siesta-22-julio.png",
+      alt: "Piscinas de La Siesta Salou",
+    },
     transfer: {
       from: "Camping Riberamar",
       to: "La Siesta Salou",
@@ -235,6 +239,10 @@ export const tripDays = [
     weekday: "Sab",
     place: "La Siesta Salou",
     detail: "Premium Plus",
+    photo: {
+      src: "./assets/day-photos/la-siesta-25-julio.png",
+      alt: "Piscina tropical de La Siesta Salou",
+    },
     status: "confirmed",
     theme: "siesta",
   },
@@ -243,6 +251,10 @@ export const tripDays = [
     weekday: "Dom",
     place: "La Siesta Salou",
     detail: "Premium Plus",
+    photo: {
+      src: "./assets/day-photos/la-siesta-26-julio.png",
+      alt: "Juegos hinchables en la piscina de La Siesta Salou",
+    },
     status: "confirmed",
     theme: "siesta",
   },
@@ -274,6 +286,29 @@ export const tripDays = [
     weekday: "Mar",
     place: "Zaragoza Camping",
     detail: "Parcela",
+    activity: {
+      title: "Ideas para visitar Zaragoza",
+      items: [
+        "Parque del Agua Luis Bunuel",
+        "Palacio de la Aljaferia",
+        "Museo del Foro",
+        "Plaza Salamero: cortina de agua y chorros",
+        "Puerto Venecia: tobogan gigante y fuente de chorros",
+        "Acuario de Zaragoza",
+        "Climbat Torre Outlet: escalada indoor",
+        "Kids City Plaza: parque de bolas",
+      ],
+      links: [
+        {
+          label: "Museo del Foro",
+          url: "https://museos-cultura.zaragoza.es/info-museo-del-foro/",
+        },
+        {
+          label: "Entradas Acuario",
+          url: "https://www.taquilla.com/entradas/acuario-de-zaragoza?t10id=1037",
+        },
+      ],
+    },
     status: "confirmed",
     theme: "zaragoza",
   },
@@ -285,6 +320,10 @@ export const tripDays = [
     cost: {
       label: "52,00 €",
       note: "Coste indicado manualmente",
+    },
+    photo: {
+      src: "./assets/day-photos/madrid-experiencia-amarilla.png",
+      alt: "Experiencia Amarilla en Madrid",
     },
     transfer: {
       from: "Zaragoza Camping",
@@ -307,6 +346,10 @@ export const tripDays = [
     cost: {
       label: "No encontrado en correos",
       note: "No aparece reserva con importe en el export local",
+    },
+    photo: {
+      src: "./assets/day-photos/caceres-30-julio.png",
+      alt: "Piscina del Camping de Caceres",
     },
     transfer: {
       from: "Camping Osuna, Madrid",

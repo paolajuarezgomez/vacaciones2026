@@ -62,9 +62,14 @@ describe("vacation itinerary data", () => {
     const bravoFirstDay = tripDays.find((day) => day.date === "2026-07-18");
     const bravoSecondDay = tripDays.find((day) => day.date === "2026-07-19");
     const riberamarFirstDay = tripDays.find((day) => day.date === "2026-07-20");
+    const siestaFirstDay = tripDays.find((day) => day.date === "2026-07-22");
     const portaventuraDay = tripDays.find((day) => day.date === "2026-07-23");
     const ferrariDay = tripDays.find((day) => day.date === "2026-07-24");
+    const siestaFourthDay = tripDays.find((day) => day.date === "2026-07-25");
+    const siestaFifthDay = tripDays.find((day) => day.date === "2026-07-26");
     const zaragozaFirstDay = tripDays.find((day) => day.date === "2026-07-27");
+    const madridDay = tripDays.find((day) => day.date === "2026-07-29");
+    const caceresDay = tripDays.find((day) => day.date === "2026-07-30");
 
     assert.deepEqual(granadaDay.photo, {
       src: "./assets/day-photos/camping-granada.png",
@@ -106,6 +111,10 @@ describe("vacation itinerary data", () => {
       src: "./assets/day-photos/riberamar-20-julio.png",
       alt: "Piscina cubierta de Camping Riberamar",
     });
+    assert.deepEqual(siestaFirstDay.photo, {
+      src: "./assets/day-photos/la-siesta-22-julio.png",
+      alt: "Piscinas de La Siesta Salou",
+    });
     assert.deepEqual(portaventuraDay.photo, {
       src: "./assets/day-photos/portaventura-23-julio.png",
       alt: "Mapa de PortAventura World",
@@ -114,9 +123,25 @@ describe("vacation itinerary data", () => {
       src: "./assets/day-photos/ferrari-land-24-julio.png",
       alt: "Atraccion de Ferrari Land",
     });
+    assert.deepEqual(siestaFourthDay.photo, {
+      src: "./assets/day-photos/la-siesta-25-julio.png",
+      alt: "Piscina tropical de La Siesta Salou",
+    });
+    assert.deepEqual(siestaFifthDay.photo, {
+      src: "./assets/day-photos/la-siesta-26-julio.png",
+      alt: "Juegos hinchables en la piscina de La Siesta Salou",
+    });
     assert.deepEqual(zaragozaFirstDay.photo, {
       src: "./assets/day-photos/zaragoza-27-julio.png",
       alt: "Piscina de Zaragoza Camping",
+    });
+    assert.deepEqual(madridDay.photo, {
+      src: "./assets/day-photos/madrid-experiencia-amarilla.png",
+      alt: "Experiencia Amarilla en Madrid",
+    });
+    assert.deepEqual(caceresDay.photo, {
+      src: "./assets/day-photos/caceres-30-julio.png",
+      alt: "Piscina del Camping de Caceres",
     });
   });
 
@@ -126,6 +151,34 @@ describe("vacation itinerary data", () => {
     assert.deepEqual(riberamarSecondDay.activity, {
       title: "DAY PASS HOTEL CON PARQUE ACUATICO SPORTS",
       note: "11:00-18:00",
+    });
+  });
+
+  it("stores the Zaragoza park visit", () => {
+    const zaragozaSecondDay = tripDays.find((day) => day.date === "2026-07-28");
+
+    assert.deepEqual(zaragozaSecondDay.activity, {
+      title: "Ideas para visitar Zaragoza",
+      items: [
+        "Parque del Agua Luis Bunuel",
+        "Palacio de la Aljaferia",
+        "Museo del Foro",
+        "Plaza Salamero: cortina de agua y chorros",
+        "Puerto Venecia: tobogan gigante y fuente de chorros",
+        "Acuario de Zaragoza",
+        "Climbat Torre Outlet: escalada indoor",
+        "Kids City Plaza: parque de bolas",
+      ],
+      links: [
+        {
+          label: "Museo del Foro",
+          url: "https://museos-cultura.zaragoza.es/info-museo-del-foro/",
+        },
+        {
+          label: "Entradas Acuario",
+          url: "https://www.taquilla.com/entradas/acuario-de-zaragoza?t10id=1037",
+        },
+      ],
     });
   });
 

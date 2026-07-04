@@ -17,6 +17,9 @@ describe("itinerary rendering", () => {
     assert.match(html, /Street Mission/);
     assert.match(html, /Ferrari Land/);
     assert.match(html, /Escape room Experiencia Amarilla/);
+    assert.match(html, /Museo del Foro/);
+    assert.match(html, /https:\/\/museos-cultura\.zaragoza\.es\/info-museo-del-foro\//);
+    assert.match(html, /Kids City Plaza/);
   });
 
   it("renders transfer estimates on transfer days", () => {

@@ -266,6 +266,31 @@ button {
   line-height: 1.35;
 }
 
+.activity ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.activity-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.activity-links a {
+  padding: 7px 9px;
+  border-radius: 8px;
+  background: rgba(23, 33, 43, 0.88);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
 .transfer-meta {
   display: flex;
   gap: 8px;
