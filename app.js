@@ -59,6 +59,9 @@ export function renderStays(stays) {
             <strong>${escapeHtml(stay.cost.label)}</strong>
             ${stay.cost.note ? `<small>${escapeHtml(stay.cost.note)}</small>` : ""}
           </div>
+          <a class="maps-link" href="${escapeHtml(stay.mapsUrl)}" target="_blank" rel="noopener noreferrer">
+            Ver en Google Maps
+          </a>
           <strong>${stay.nights} ${stay.nights === 1 ? "noche" : "noches"}</strong>
         </article>
       `,
@@ -84,6 +87,9 @@ function renderDayCard(day) {
       </div>
     `
     : "";
+  const photo = day.photo
+    ? `<img class="day-photo" src="${escapeHtml(day.photo.src)}" alt="${escapeHtml(day.photo.alt)}">`
+    : "";
   const activity = day.activity
     ? `
       <div class="activity">
@@ -104,6 +110,7 @@ function renderDayCard(day) {
         <span class="status-pill status-${day.status}">${statusLabel(day.status)}</span>
       </header>
       <div class="day-card-body">
+        ${photo}
         <h2>${escapeHtml(day.place)}</h2>
         <p>${escapeHtml(day.detail)}</p>
         ${standaloneCheckIn}

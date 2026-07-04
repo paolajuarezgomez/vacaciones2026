@@ -21,6 +21,10 @@ export const tripDays = [
       label: "692,36 €",
       note: "Importe de la reserva",
     },
+    photo: {
+      src: "./assets/day-photos/la-marina-dia-1.png",
+      alt: "Piscina de La Marina Resort",
+    },
     transfer: {
       from: "Camping Granada",
       to: "La Marina Resort",
@@ -35,6 +39,10 @@ export const tripDays = [
     weekday: "Dom",
     place: "La Marina Resort",
     detail: "Parcela 379",
+    photo: {
+      src: "./assets/day-photos/la-marina-dia-2.png",
+      alt: "Toboganes de La Marina Resort",
+    },
     status: "confirmed",
     theme: "marina",
   },
@@ -311,8 +319,13 @@ export function getStays(days = tripDays) {
           label: "No encontrado en correos",
           note: "Sin importe localizado",
         },
+        mapsUrl: googleMapsSearchUrl(day.place),
       });
 
       return stays;
     }, []);
+}
+
+function googleMapsSearchUrl(place) {
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place)}`;
 }

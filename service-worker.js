@@ -1,4 +1,4 @@
-const CACHE_NAME = "vacaciones-2026-v8";
+const CACHE_NAME = "vacaciones-2026-v10";
 const ASSETS = [
   "./",
   "./index.html",
@@ -7,6 +7,8 @@ const ASSETS = [
   "./app.js",
   "./manifest.webmanifest",
   "./assets/trip-hero.png",
+  "./assets/day-photos/la-marina-dia-1.png",
+  "./assets/day-photos/la-marina-dia-2.png",
   "./assets/icon-192.png",
   "./assets/icon-512.png",
 ];

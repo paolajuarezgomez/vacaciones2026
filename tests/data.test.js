@@ -32,6 +32,7 @@ describe("vacation itinerary data", () => {
         label: "692,36 €",
         note: "Importe de la reserva",
       },
+      mapsUrl: "https://www.google.com/maps/search/?api=1&query=La%20Marina%20Resort",
     });
   });
 
@@ -47,6 +48,15 @@ describe("vacation itinerary data", () => {
       "Zaragoza Camping": "84,50 €",
       "Camping Osuna, Madrid": "52,00 €",
       "Camping de Caceres": "No encontrado en correos",
+    });
+  });
+
+  it("stores day photos when provided", () => {
+    const marinaFirstDay = tripDays.find((day) => day.date === "2026-07-11");
+
+    assert.deepEqual(marinaFirstDay.photo, {
+      src: "./assets/day-photos/la-marina-dia-1.png",
+      alt: "Piscina de La Marina Resort",
     });
   });
 

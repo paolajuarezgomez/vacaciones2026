@@ -30,6 +30,13 @@ describe("itinerary rendering", () => {
     assert.match(html, /Zaragoza Camping -> Camping Osuna, Madrid/);
   });
 
+  it("renders day photos in itinerary cards", () => {
+    const marinaDay = tripDays.find((day) => day.date === "2026-07-11");
+    const html = renderItinerary([marinaDay]);
+
+    assert.match(html, /<img class="day-photo" src="\.\/assets\/day-photos\/la-marina-dia-1\.png" alt="Piscina de La Marina Resort">/);
+  });
+
   it("renders check-in details inside transfer boxes when a transfer exists", () => {
     const marinaDay = tripDays.find((day) => day.date === "2026-07-11");
     const html = renderItinerary([marinaDay]);
@@ -58,6 +65,8 @@ describe("itinerary rendering", () => {
     assert.match(html, /692,36 €/);
     assert.match(html, /Importe de la reserva/);
     assert.match(html, /No encontrado en correos/);
+    assert.match(html, /href="https:\/\/www\.google\.com\/maps\/search\/\?api=1&amp;query=La%20Marina%20Resort"/);
+    assert.match(html, /target="_blank"/);
   });
 
   it("formats single-day and range dates", () => {
