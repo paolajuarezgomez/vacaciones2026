@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0f766e">
+    <title>Vacaciones 2026</title>
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="icon" href="./assets/icon-192.png">
+    <link rel="apple-touch-icon" href="./assets/icon-192.png">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero" aria-labelledby="app-title">
+        <img src="./assets/trip-hero.png" alt="" aria-hidden="true">
+        <div class="hero-content">
+          <p class="eyebrow">10 jul - 2 ago</p>
+          <h1 id="app-title">Vacaciones 2026</h1>
+          <div class="quick-stats" aria-label="Resumen">
+            <span data-day-count>24 dias</span>
+            <span data-pending-count>3 pendientes</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="next-section" aria-labelledby="next-title">
+        <div class="section-heading">
+          <p class="eyebrow">Proximo hito</p>
+          <h2 id="next-title">Dia destacado</h2>
+        </div>
+        <div data-next-day></div>
+      </section>
+
+      <nav class="tabs" aria-label="Vistas del viaje">
+        <button type="button" data-tab="itinerary" class="active" aria-selected="true">Itinerario</button>
+        <button type="button" data-tab="pending" aria-selected="false">Pendientes</button>
+        <button type="button" data-tab="stays" aria-selected="false">Alojamientos</button>
+      </nav>
+
+      <section class="tab-panel" data-tab-panel="itinerary" aria-label="Itinerario completo">
+        <div class="cards-list" data-itinerary></div>
+      </section>
+
+      <section class="tab-panel" data-tab-panel="pending" aria-label="Pendientes" hidden>
+        <div class="cards-list compact" data-pending></div>
+      </section>
+
+      <section class="tab-panel" data-tab-panel="stays" aria-label="Alojamientos" hidden>
+        <div class="stay-grid" data-stays></div>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
