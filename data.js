@@ -24,7 +24,7 @@ export const tripDays = [
     transfer: {
       from: "Camping Granada",
       to: "La Marina Resort",
-      duration: "4 h",
+      duration: "3 h 20 min",
       note: "Estimacion por carretera sin trafico en vivo.",
     },
     status: "confirmed",

@@ -56,7 +56,7 @@ describe("vacation itinerary data", () => {
     assert.deepEqual(
       transferDays.map((day) => [day.date, day.transfer.from, day.transfer.duration]),
       [
-        ["2026-07-11", "Camping Granada", "4 h"],
+        ["2026-07-11", "Camping Granada", "3 h 20 min"],
         ["2026-07-18", "La Marina Resort", "3 h 20 min"],
         ["2026-07-20", "Bravoplaya Resort", "20 min"],
         ["2026-07-22", "Camping Riberamar", "1 h 45 min"],

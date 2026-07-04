@@ -24,7 +24,7 @@ describe("itinerary rendering", () => {
 
     assert.match(html, /Traslado/);
     assert.match(html, /Camping Granada -> La Marina Resort/);
-    assert.match(html, /4 h/);
+    assert.match(html, /3 h 20 min/);
     assert.match(html, /La Marina Resort -> Bravoplaya Resort/);
     assert.match(html, /3 h 20 min/);
     assert.match(html, /Zaragoza Camping -> Camping Osuna, Madrid/);
