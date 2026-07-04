@@ -17,6 +17,8 @@ describe("itinerary rendering", () => {
     assert.match(html, /Street Mission/);
     assert.match(html, /Ferrari Land/);
     assert.match(html, /Escape room Experiencia Amarilla/);
+    assert.match(html, /portaventura-plan-23-julio\.jpg/);
+    assert.match(html, /10:30 Far West - Uncharted/);
     assert.match(html, /Museo del Foro/);
     assert.match(html, /https:\/\/museos-cultura\.zaragoza\.es\/info-museo-del-foro\//);
     assert.match(html, /Kids City Plaza/);

@@ -1,4 +1,4 @@
-import { getPendingDays, getStays, tripDays } from "./data.js?v=14";
+import { getPendingDays, getStays, tripDays } from "./data.js?v=15";
 
 const monthNames = new Intl.DateTimeFormat("es-ES", { month: "short" });
 const dayMonth = new Intl.DateTimeFormat("es-ES", {
@@ -96,6 +96,7 @@ function renderDayCard(day) {
         <span>Actividad</span>
         <strong>${escapeHtml(day.activity.title)}</strong>
         ${day.activity.note ? `<p>${escapeHtml(day.activity.note)}</p>` : ""}
+        ${day.activity.image ? `<img class="activity-image" src="${escapeHtml(day.activity.image.src)}" alt="${escapeHtml(day.activity.image.alt)}">` : ""}
         ${day.activity.items ? `<ul>${day.activity.items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>` : ""}
         ${day.activity.links ? `<div class="activity-links">${day.activity.links.map((link) => `<a href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.label)}</a>`).join("")}</div>` : ""}
       </div>

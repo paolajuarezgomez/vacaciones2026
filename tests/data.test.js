@@ -182,6 +182,14 @@ describe("vacation itinerary data", () => {
     });
   });
 
+  it("stores the PortAventura plan", () => {
+    const portaventuraDay = tripDays.find((day) => day.date === "2026-07-23");
+
+    assert.equal(portaventuraDay.activity.image.src, "./assets/day-photos/portaventura-plan-23-julio.jpg");
+    assert.ok(portaventuraDay.activity.items.includes("15:15 SesamoAventura - Street Mission"));
+    assert.ok(portaventuraDay.activity.items.includes("21:00-22:30 Far West - Reintento Uncharted si no la hiciste"));
+  });
+
   it("adds transfer estimates on accommodation change days", () => {
     const transferDays = tripDays.filter((day) => day.transfer);
 
